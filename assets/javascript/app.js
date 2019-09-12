@@ -29,3 +29,6 @@ $("#add-gif").on("click", function (event) {
     // Call the renderButtons function to add the new gif as a button
     renderButtons();
 });
+
+//this on click function will call on the function displayGif that will append all the gifs to the page
+$(document).on("click", ".gif", displayGif);
