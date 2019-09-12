@@ -3,7 +3,7 @@ var gifs = ["memes", "spongebob", "sports", "anime"];
 
 //function to create gif buttons
 function renderButtons() {
-    
+
     $("#gif-buttons").empty();
 
     for (var i = 0; i < gifs.length; i++) {
@@ -32,3 +32,20 @@ $("#add-gif").on("click", function (event) {
 
 //this on click function will call on the function displayGif that will append all the gifs to the page
 $(document).on("click", ".gif", displayGif);
+
+//this gif will reach the giphy api with ajax and append gifs to the page
+function displayGif() {
+
+    var gif = $(this).attr("data-name");
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
+        gif + "&api_key=9t5U6uBQDsEFQdcXhjan5xbzlGvGDCKj&limit=10";
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function (response) {
+
+        console.log(response);
+
+    });
+}
