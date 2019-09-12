@@ -15,4 +15,17 @@ function renderButtons() {
         $("#gif-buttons").append(newGifButton);
     }
 }
+//call the function on page startup so beginning array will show
 renderButtons();
+
+//on click function to add new gif buttons to display
+$("#add-gif").on("click", function (event) {
+    event.preventDefault();
+
+    var gif = $("#gif-input").val().trim();
+
+    gifs.push(gif);
+
+    // Call the renderButtons function to add the new gif as a button
+    renderButtons();
+});
