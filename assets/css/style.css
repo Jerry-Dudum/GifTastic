@@ -23,4 +23,22 @@ h1 {
     margin: 5px 10px;
 }
 
+#gifs-here {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gif {
+    margin: 10px 10px;
+}
+
+#rating {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#gif-input {
+    width: 200px;
+}
 
