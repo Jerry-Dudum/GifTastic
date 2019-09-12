@@ -17,5 +17,8 @@ h1 {
     background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+}
+
+.gif {
+    margin: 5px 10px;
 }
