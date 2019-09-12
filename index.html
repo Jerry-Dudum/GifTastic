@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -20,7 +20,23 @@
 </head>
 
 <body>
+    <div class="header">
+        <div class="row justify-content-center no-gutters">
+            <h1>GifTastic</h1>
+        </div>
+    </div>
 
+    <div class="container justify-content-center no-gutters">
+        <div id="buttons" class="row">
+            <form id="gif-form">
+                <label for="gif-input">Search</label>
+                <input type="text" id="gif-input">
+            
+                <!-- Button triggers new gif to be added -->
+                <button id="add-gif" type="button" class="btn btn-success">Add a Gif!</button>
+            </form>
+        </div>
+    </div>
    
 
     <script type="text/javascript" src="assets/javascript/app.js"></script>
