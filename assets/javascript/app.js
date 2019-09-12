@@ -33,7 +33,7 @@ $("#add-gif").on("click", function (event) {
 //this on click function will call on the function displayGif that will append all the gifs to the page
 $(document).on("click", ".gif-button", displayGif);
 
-//this gif will reach the giphy api with ajax and append gifs to the page
+//this function will reach the giphy api with ajax and append gifs to the page
 function displayGif() {
 
     //empties out gifs so only 10 will display at a time to not clutter the screen with past searches
